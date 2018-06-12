@@ -1,29 +1,86 @@
+
+
 ---
 title: "teste-fm"
-author: "Fernando"
+author: "Fernando M Resende"
 output: word_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+
+- cria pasta com arquivos
+
+- abro o git bash na pasta
+
+
+```
+# tem que informar para o git quem eh vc e um email de contato
+git config --global user.name "Fernando de Moura Resende" # coloca o nome
+git config --global user.email "fermresende@gmail.com" # defini o email que vc cadastrou
+# faz so uma vez. Configuracao inicial de nome de usuario
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```
+ls # lista os arquivos da pasta
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```
+git init # inicia o repositorio. Qquer pasta nova que iniciar e colocar o Git inicia com "git init"
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```
+git status # te fala quais arquivos estão sendo monitorados ou nao
+```
+
+
+```
+git add # agora tem que avisar quais arquivos você quer monitorar
+git add . # comeca a monitorar todos os arquivos da pasta
+```
+
+```
+git commit -m "commit inicial" # hifen m indica mensagem. Commit eh uma fotografia do que tem no repositorio. 
+
+# o commit cria um ponto de restauração. Criando um commit tem como voltar na versao anterior
+
+# eh bom criar um commit em cada modificacao importante que fizer
+```
+
+
+
+```
+git log # te da as informacoes
+```
+
+
+
+```
+git status # te fala quais arquivos estao sendo monitorados ou nao
+```
+
+
+```
+git diff teste-fm.rmd # te mostra o que mudou do arquivo
+```
+
+
+
+
+```
+# para mandar para o repositorio on line
+git remote add origin https://github.com/fermresende/teste-fr.git
+
+git push -u origin master
+
+```
+
+
+
+
+
+
+
+
